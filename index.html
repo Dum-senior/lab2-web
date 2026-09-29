@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебная страница студента НВГУ Дмитрия Елистратова">
+  <title>Дмитрий Елистратов — студент НВГУ</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .internal-note {
+      border-left: 4px solid #8b5cf6;
+      padding-left: 1rem;
+      color: #4c1d95;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Навигация по странице">
+      <a class="logo" href="#top">ДЕ</a>
+      <ul class="nav-list">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#university">Мой вуз</a></li>
+        <li><a href="#tables">Таблицы</a></li>
+        <li><a href="#forms">Формы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container" id="about">
+      <div class="hero-text">
+        <p class="eyebrow">Лабораторная работа №2</p>
+        <h1>Дмитрий Дмитриевич Елистратов</h1>
+        <p class="lead">Студент группы 3402 Нижневартовского государственного университета.</p>
+        <p class="internal-note">Изучаю веб-разработку и создаю свою первую страницу на HTML и CSS.</p>
+        <p style="color: #0f766e; font-weight: 700;">Будущая профессия — разработчик программного обеспечения.</p>
+        <div class="actions">
+          <a class="button primary" href="mailto:122819196+Dum-senior@users.noreply.github.com">Написать мне</a>
+          <a class="button secondary" href="https://nvsu.ru/" target="_blank" rel="noopener">Сайт НВГУ</a>
+        </div>
+      </div>
+      <figure class="portrait-card">
+        <img src="images/student.jpg" alt="Фотография Дмитрия Елистратова">
+        <figcaption>Студент НВГУ, группа 3402</figcaption>
+      </figure>
+    </section>
+
+    <section class="section container" id="university">
+      <div class="section-heading">
+        <p class="eyebrow">Образование</p>
+        <h2>Мой вуз</h2>
+      </div>
+      <article class="card university-card">
+        <h3>Нижневартовский государственный университет</h3>
+        <p>НВГУ — образовательный и научный центр Нижневартовска. Университет готовит специалистов по техническим, гуманитарным, педагогическим и другим направлениям.</p>
+        <dl class="facts">
+          <div><dt>Группа</dt><dd>3402</dd></div>
+          <div><dt>Направление</dt><dd>Информационные технологии</dd></div>
+          <div><dt>Цель</dt><dd>Освоить разработку современных веб-приложений</dd></div>
+        </dl>
+      </article>
+    </section>
+
+    <section class="section container" id="interests">
+      <div class="section-heading">
+        <p class="eyebrow">Интересы</p>
+        <h2>Увлечения</h2>
+      </div>
+      <div class="interest-grid">
+        <article class="card"><span class="icon">&lt;/&gt;</span><h3>Программирование</h3><p>Изучаю языки программирования и практикуюсь на учебных проектах.</p></article>
+        <article class="card"><span class="icon">↗</span><h3>Анализ данных</h3><p>Интересуюсь обработкой информации и наглядным представлением результатов.</p></article>
+        <article class="card"><span class="icon">●</span><h3>Спорт</h3><p>Активный отдых помогает сохранять концентрацию и рабочий ритм.</p></article>
+      </div>
+    </section>
+
+    <section class="section container" id="tables">
+      <div class="section-heading">
+        <p class="eyebrow">Задание 2.2</p>
+        <h2>Таблицы</h2>
+      </div>
+
+      <article class="card example">
+        <h3>Таблица А</h3>
+        <div class="table-scroll">
+          <table class="layout-table" aria-label="Таблица со сложным объединением ячеек">
+            <tbody>
+              <tr><td colspan="5">Объединённая строка</td></tr>
+              <tr><td rowspan="2">1</td><td>2.1</td><td rowspan="2">3</td><td>4.1</td><td>5.1</td></tr>
+              <tr><td rowspan="2">2.2</td><td rowspan="2">4.2</td><td>5.2</td></tr>
+              <tr><td>1.2</td><td>3.2</td><td>5.3</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="card example">
+        <h3>Таблица Б</h3>
+        <div class="table-scroll">
+          <table class="color-table" aria-label="Цветная таблица со сложным объединением ячеек">
+            <tbody>
+              <tr><td class="aqua" colspan="6">Верхняя строка</td></tr>
+              <tr><td class="cream" rowspan="5"></td><td class="aqua" colspan="4"></td><td class="cream" rowspan="5"></td></tr>
+              <tr><td class="cream" rowspan="3"></td><td class="aqua" colspan="2"></td><td class="cream" rowspan="3"></td></tr>
+              <tr><td class="red"></td><td class="blue"></td></tr>
+              <tr><td class="green"></td><td class="yellow"></td></tr>
+              <tr><td class="aqua" colspan="4"></td></tr>
+              <tr><td class="aqua" colspan="6">Нижняя строка</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="section container" id="forms">
+      <div class="section-heading">
+        <p class="eyebrow">Задание 2.3</p>
+        <h2>Формы</h2>
+      </div>
+
+      <article class="card form-card">
+        <h3>ЗАО «Птицефабрика №1»</h3>
+        <form action="#" method="get">
+          <div class="form-grid">
+            <label>Фамилия<input type="text" name="surname"></label>
+            <label>Инициалы<input type="text" name="initials"></label>
+            <label>Пароль<input type="password" name="password"></label>
+            <label class="wide">Адрес получателя<input type="text" name="address"></label>
+            <label>Количество<input type="number" name="quantity" min="1"></label>
+            <label>Тип
+              <select name="bird"><option>Куриные</option><option>Индюшиные</option></select>
+            </label>
+            <label>Категория
+              <select name="category"><option>Отборные</option><option>Первая</option><option>Вторая</option></select>
+            </label>
+          </div>
+          <fieldset><legend>Доставка</legend><label><input type="radio" name="delivery" value="mail"> Почтой</label><label><input type="radio" name="delivery" value="digital"> Электронно</label><label><input type="radio" name="delivery" value="courier"> Курьером</label></fieldset>
+          <label class="check"><input type="checkbox" name="invoice"> Требуется накладная</label>
+          <label>Дополнительная информация<textarea name="details" rows="4"></textarea></label>
+          <div class="form-actions"><button type="reset">Очистить</button><button type="submit">Отправить</button></div>
+        </form>
+      </article>
+
+      <article class="card form-card registration">
+        <h3>Пример формы регистрации сайта</h3>
+        <form action="#" method="post">
+          <label>Логин<input type="text" name="login" required></label>
+          <label>Пароль<input type="password" name="site-password" required></label>
+          <label>URL-адрес сайта<input type="url" name="url" value="https://"></label>
+          <label>Название сайта<input type="text" name="site-name"></label>
+          <label>Описание сайта<textarea name="description" rows="6"></textarea></label>
+          <label>Тема сайта<select name="topic"><option>Тема не выбрана</option><option>Образование</option><option>Технологии</option><option>Личный сайт</option></select></label>
+          <label>Баннер 88×31<input type="file" name="banner" accept="image/*"></label>
+          <div class="form-actions"><button type="reset">Очистить</button><button type="submit">Отправить</button></div>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Дмитрий Елистратов</strong><br><span>Лабораторная работа №2</span></p>
+      <address><a href="mailto:122819196+Dum-senior@users.noreply.github.com">122819196+Dum-senior@users.noreply.github.com</a></address>
+    </div>
+  </footer>
+</body>
+</html>
